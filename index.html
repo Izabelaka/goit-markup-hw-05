@@ -56,7 +56,7 @@
         <section class="header-one-structure">
             <div class="container">
             <h1 class="header-one">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="header-one-button" >Zamów usługę</button>
+            <button type="button" class="header-one-button" data-modal-open>Zamów usługę</button>
             </div>
         </section>
 
@@ -112,17 +112,20 @@
         
         <!--czym sie zajmujemy-->
         <section class="section">
-            <div class="container">
+            <div class="container offer">
             <h2 class="header-two">Czym się zajmujemy</h2>
             <ul class="list-style photo-list">
-                <li><img src="images/Czym_się_zajmujemy_img1.jpg" alt="człowiek programuje na tablecie" width="370"
+                <li class="offer-item"><img src="images/Czym_się_zajmujemy_img1.jpg" alt="człowiek programuje na tablecie" width="370"
                         height="294">
+                        <p class="offer-description">APLIKACJE KOMPUTEROWE</p>
                 </li>
-                <li><img src="images/Czym_się_zajmujemy_img2.jpg" alt="człowiek sprawdza układ strony na telef" width="370"
+                <li class="offer-item"><img src="images/Czym_się_zajmujemy_img2.jpg" alt="człowiek sprawdza układ strony na telef" width="370"
                         height="294">
+                        <p class="offer-description">APLIKACJE MOBILNE</p>
                 </li>
-                <li><img src="images/Czym_się_zajmujemy_img1.jpg" alt="człowiek wybiera kolor na tablecie" width="370"
+                <li class="offer-item"><img src="images/Czym_się_zajmujemy_img1.jpg" alt="człowiek wybiera kolor na tablecie" width="370"
                         height="294">
+                        <p class="offer-description">ROZWIĄZANIA GRAFICZNE</p>
                 </li>
             </ul>
             </div>
@@ -332,5 +335,10 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" data-modal-close>&times;</button>
+        </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
