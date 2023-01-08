@@ -502,28 +502,42 @@ gap: 10px;
 .footer-link-contact:active {
     color: var(--brand-color-white);
 }
+
+
 .footer-social-list {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     list-style: none;
 }
+
 .footer-social{
     margin-left: 70px;
 }
+.footer-icon{
+    fill: currentColor;
+}
 .footer-socials{
-    fill: var(--brand-color-white);
+    color: var(--brand-color-white);
     background-color: var(--brand-footer-background-socials);
-    border-radius: 50%; 
+    width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .footer-socials:hover{
     background-color: var(--brand-color-blue);
-    border-radius: 50%;}
-.footer-socials:focus{
-            background-color: var(--brand-color-blue);
-            border-radius: 50%;
 }
+.footer-socials:focus{
+    background-color: var(--brand-color-blue);
+            
+}
+
+
 /* background-color: var(--brand-footer-background-socials); */
 .footer-p{
     font-style: normal;
